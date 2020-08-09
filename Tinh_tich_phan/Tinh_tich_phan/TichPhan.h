@@ -1,0 +1,1 @@
+float TichPhanX2(int, int);
