@@ -1,0 +1,8 @@
+﻿  main.c
+C:\Users\84972\Desktop\Bai_1\IMIC_Excercise\Today\Today\TichPhan.h(3,20): warning C4030: first formal parameter list longer than the second list
+C:\Users\84972\Desktop\Bai_1\IMIC_Excercise\Today\Today\TichPhan.h(3,20): warning C4028: formal parameter 1 different from declaration
+C:\Users\84972\Desktop\Bai_1\IMIC_Excercise\Today\Today\main.c(11,57): warning C4133: 'function': incompatible types - from 'double (__cdecl *)(float)' to 'float (__cdecl *)(float)'
+C:\Users\84972\Desktop\Bai_1\IMIC_Excercise\Today\Today\main.c(12,57): warning C4133: 'function': incompatible types - from 'double (__cdecl *)(float)' to 'float (__cdecl *)(float)'
+C:\Users\84972\Desktop\Bai_1\IMIC_Excercise\Today\Today\main.c(13,56): warning C4133: 'function': incompatible types - from 'double (__cdecl *)(float)' to 'float (__cdecl *)(float)'
+C:\Users\84972\Desktop\Bai_1\IMIC_Excercise\Today\Today\main.c(14,61): warning C4133: 'function': incompatible types - from 'double (__cdecl *)(float)' to 'float (__cdecl *)(float)'
+  Today.vcxproj -> C:\Users\84972\Desktop\Bai_1\IMIC_Excercise\Today\Debug\Today.exe
