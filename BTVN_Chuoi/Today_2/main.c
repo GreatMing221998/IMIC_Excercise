@@ -31,7 +31,7 @@ char* DiaChi(char* msg, char* target) {
 
 int valueof(char* msg, char* target, char* val) {
 	int i = 0;
-	char* start = DiaChi(msg, target) + stringLen(target) + 3;
+	char* start = DiaChi(msg, target) + stringLen(target) + 2;
 	while (*(start + i) != '\"') {
 		*(val+i) = *(start + i);
 		i++;
@@ -45,7 +45,7 @@ int valueof(char* msg, char* target, char* val) {
 }
 
 int main() {
-	char msg[] = "{\r\n\"Motor\":\"OFF\",\r\n\"Fan\":\"OFF\",\r\n\"TV\":\"ON\"\r\n}";
+	char msg[] = "{\r\n\"Motor\":\"OFF\",\r\n\"Fan\":\"ON\",\r\n\"TV\":\"OFF\"\r\n}";
 	char* target = "TV";
 	char val[10] = { 0 };
 	printf("Vi tri cua %s: %d\r\n",target, position(msg, target));
