@@ -1,0 +1,6 @@
+﻿  main.c
+C:\Users\84972\Desktop\Bai_1\IMIC_Excercise\BTVN_1\BTVN_1\main.c(53,11): warning C4047: 'function': 'PhanSo *' differs in levels of indirection from 'PhanSo **'
+C:\Users\84972\Desktop\Bai_1\IMIC_Excercise\BTVN_1\BTVN_1\main.c(53,11): warning C4024: 'HamLoc': different types for formal and actual parameter 1
+C:\Users\84972\Desktop\Bai_1\IMIC_Excercise\BTVN_1\BTVN_1\main.c(15): warning C4716: 'HamLoc': must return a value
+C:\Users\84972\Desktop\Bai_1\IMIC_Excercise\BTVN_1\BTVN_1\main.c(54): warning C4716: 'RutGon': must return a value
+  BTVN_1.vcxproj -> C:\Users\84972\Desktop\Bai_1\IMIC_Excercise\BTVN_1\Debug\BTVN_1.exe
