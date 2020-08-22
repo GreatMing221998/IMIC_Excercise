@@ -1,7 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-
 int stringLen(char* msg) {
 	int i = 0;
 	while (*(msg+i)!=0){
@@ -36,17 +35,14 @@ int valueof(char* msg, char* target, char* val) {
 		*(val+i) = *(start + i);
 		i++;
 	}
-	for (int j = 0; j < i; j++) {
-		if (*(val + j) != *("ON" + j)) {
+	if (*(val + 1) != *("ON" + 1)) 
 			return 0;
-		}
-	}
 	return 1;
 }
 
 int main() {
-	char msg[] = "{\r\n\"Motor\":\"OFF\",\r\n\"Fan\":\"ON\",\r\n\"TV\":\"OFF\"\r\n}";
-	char* target = "TV";
+	char msg[] = "{\r\n\"Motor\":\"OFF\",\r\n\"Fan\":\"ON\",\r\n\"TV\":\"ON\"\r\n}";
+	char* target = "Fan";
 	char val[10] = { 0 };
 	printf("Vi tri cua %s: %d\r\n",target, position(msg, target));
 	if (valueof(msg, target, val) == 1) {
