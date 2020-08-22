@@ -29,7 +29,6 @@ char* DiaChi(char* msg, char* target) {
 }
 
 char valueof(char* msg, char* target) {
-	int i = 0;
 	char* start = DiaChi(msg, target) + stringLen(target) + 2;
 	if (*(start + 1) != *("ON" + 1)) 
 			return 0;
