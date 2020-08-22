@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-unsigned int stringLen(char* msg) {
+int stringLen(char* msg) {
 	int i = 0;
 	while (*(msg+i)!=0){
 		i++;
@@ -9,10 +9,10 @@ unsigned int stringLen(char* msg) {
 	return i;
 }
 
-unsigned int position(char* msg, char* target) {
-	unsigned int i = 0;
+int position(char* msg, char* target) {
+	int i = 0;
 	for (i; i < stringLen(msg); i++) {
-		unsigned int j = 0;
+		int j = 0;
 		for (j = 0; j < stringLen(target); j++) {
 			if (msg[i + j] != target[j])
 				break;
@@ -23,13 +23,13 @@ unsigned int position(char* msg, char* target) {
 	return i+1;
 }
 
-unsigned char* DiaChi(char* msg, char* target) {
+char* DiaChi(char* msg, char* target) {
 	char* d = msg + position(msg, target);
 	return d;
 }
 
-unsigned char valueof(char* msg, char* target, char* val) {
-	unsigned int i = 0;
+char valueof(char* msg, char* target, char* val) {
+	int i = 0;
 	char* start = DiaChi(msg, target) + stringLen(target) + 2;
 	while (*(start + i) != '\"') {
 		*(val+i) = *(start + i);
