@@ -28,24 +28,19 @@ char* DiaChi(char* msg, char* target) {
 	return d;
 }
 
-char valueof(char* msg, char* target, char* val) {
+char valueof(char* msg, char* target) {
 	int i = 0;
 	char* start = DiaChi(msg, target) + stringLen(target) + 2;
-	while (*(start + i) != '\"') {
-		*(val+i) = *(start + i);
-		i++;
-	}
-	if (*(val + 1) != *("ON" + 1)) 
+	if (*(start + 1) != *("ON" + 1)) 
 			return 0;
 	return 1;
 }
 
 void main() {
 	char msg[] = "{\r\n\"Motor\":\"OFF\",\r\n\"Fan\":\"OFF\",\r\n\"TV\":\"ON\"\r\n}";
-	char* target = "Motor";
-	char val[8] = { 0 };
+	char* target = "TV";
 	printf("Vi tri cua %s: %d\r\n",target, position(msg, target));
-	if (valueof(msg, target, val) == 1) {
+	if (valueof(msg, target) == 1) {
 		printf("ON");
 	}
 	else {
