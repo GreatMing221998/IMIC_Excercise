@@ -27,7 +27,7 @@ void Xuat(SV* A, int n) {
 int main()
 {
     SV* ptr;
-    int i = 0, n = 0;
+    int n = 0;
     printf("So hoc sinh: ");
     scanf("%d", &n);
     ptr = (SV*)calloc(n, sizeof(SV));
